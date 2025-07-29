@@ -19,6 +19,12 @@ function App() {
       >
         Toggle
       </button>
+      <button
+        className='py-2 px-3 text-[var(--tg-theme-button-text-color)] bg-[var(--tg-theme-button-color)]'
+        onClick={onToggleButton}
+      >
+        Toggle
+      </button>
     </>
   )
 }
