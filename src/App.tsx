@@ -13,7 +13,12 @@ function App() {
   return (
     <>
       <Header />
-      <button onClick={onToggleButton}>Toggle</button>
+      <button
+        className='py-2 px-3 text-[var(--tg-theme-button-color)] bg-[var(--tg-theme-button-text-color)]'
+        onClick={onToggleButton}
+      >
+        Toggle
+      </button>
     </>
   )
 }
