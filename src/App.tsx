@@ -13,14 +13,9 @@ function App() {
   return (
     <>
       <Header />
+
       <button
-        className='py-2 px-3 text-[var(--TelegramWebApp-theme-button-text-color)] bg-[var(--tg-theme-button-color)]'
-        onClick={onToggleButton}
-      >
-        Toggle
-      </button>
-      <button
-        className='py-2 px-3 text-[var(--tg-theme-button-text-color)] bg-[var(--tg-theme-button-color)]'
+        className='text-[var(--tg-theme-button-text-color)] bg-[var(--tg-theme-button-color)] px-3 py-2'
         onClick={onToggleButton}
       >
         Toggle
