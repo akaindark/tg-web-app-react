@@ -1,14 +1,14 @@
 import useTelegram from '../../hooks/useTelegram'
 import Button from '../Button/Button'
-import './Header.css'
+// import './Header.css'
 
 const Header = () => {
   const { user, onClose } = useTelegram()
 
   return (
-    <header className='header'>
+    <header className='w-full h-12 flex items-center px-5'>
       <Button onClick={onClose}>Закрыть</Button>
-      <span className='username'>{user?.username}</span>
+      <span className='ml-auto'>{user?.username}</span>
     </header>
   )
 }
