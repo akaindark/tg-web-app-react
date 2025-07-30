@@ -14,7 +14,15 @@ interface TelegramMainButton {
   isVisible: boolean
   show: () => void
   hide: () => void
-  // другие методы и свойства MainButton, если нужно
+  setParams: (params: {
+    text: string
+    color?: string
+    textColor?: string
+    isActive?: boolean
+    isProgressVisible?: boolean
+  }) => void
+  onClick: (callback: () => void) => void
+  offClick: (callback: () => void) => void
 }
 
 interface TelegramWebApp {
